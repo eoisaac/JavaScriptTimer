@@ -1,0 +1,95 @@
+:root{
+	--background-color:#383a59;
+	--container-color:#282a36;
+	--white-color:#f8f8f2;
+	--key-color:#6272a4;
+	--yellow-color:#f1fa8c;
+	--green-color:#50fa7b;
+	--red-color: #ff5555;
+
+}
+
+::selection{
+	background-color: var(--background-color);
+	color: var(--white-color);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'ZCOOL QingKe HuangYou', cursive;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: var(--background-color);
+}
+
+.main-title{
+	font-size: 50px;
+	text-align: center;
+	margin-top: 20px;
+	color: var(--white-color);
+}
+
+.container{
+	position: absolute;
+	width: 320px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: var(--container-color);
+	padding: 10px;
+	border-radius: 10px;
+	border: var(--key-color);
+	box-shadow: 3px 3px var(--key-color);
+}
+
+.display{
+	border-radius: 10px;
+	/* border-bottom: 2px solid var(--white-color); */
+	font-size: 90px;
+	text-align: center;
+	color: var(--white-color);
+	margin-bottom: 10px;
+}
+
+.button{
+	width: 85px;
+	height: 40px;
+	text-align: center;
+	font-size: 30px;
+	margin: 6px;
+	border-radius: 10px;
+	border: var(--key-color);
+	box-shadow: 3px 3px var(--key-color);
+	background-color: var(--white-color);
+	color: var(--container-color);
+	cursor: pointer;
+}
+
+.button.-start{
+	background-color: var(--green-color);
+}
+
+.button.-pause{
+	background-color: var(--red-color);
+}
+
+.button.-reset{
+	background-color: var(--yellow-color);
+}
+
+.button:hover{
+	background-color:rgba(255, 255, 255, 0.7);
+	transform: scale(1.05);	
+}
+
+.button:active{
+	background-color:rgba(255, 255, 255, 0.7);
+	transform: scale(1.02);	
+}
+
+:disabled{
+	cursor:not-allowed;
+}

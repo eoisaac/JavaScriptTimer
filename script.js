@@ -14,7 +14,7 @@ function leftZero(num){
 
 function startCount(){
 	chronometer = setInterval(function(){
-		timerDisplay.style.color = 'green';
+		timerDisplay.style.color = 'var(--white-color)';
 
 		if(seconds < 60){ seconds++;}
 
@@ -30,14 +30,14 @@ function startCount(){
 function pauseCount(){
 	setTimeout(function(){
 		clearInterval(chronometer);
-		timerDisplay.style.color = 'red';
+		timerDisplay.style.color = 'var(--red-color)';
 	}, 0);
 }
 
 function resetCount(){
 	setTimeout(function(){
 		clearInterval(chronometer);
-		timerDisplay.style.color = 'black';
+		timerDisplay.style.color = 'var(--white-color)';
 	}, 0);
 
 	seconds =0;
@@ -49,12 +49,19 @@ function resetCount(){
 
 btnStart.addEventListener('click', function(event){
 	startCount();
+	btnStart.innerHTML = 'Start'
+	setTimeout(function(){
+		btnStart.disabled = true;
+	}, 0);
 });
 
 btnPause.addEventListener('click', function(event){
 	pauseCount();
+	btnStart.disabled = false;
+	btnStart.innerHTML = 'Resume'
 });
 
 btnReset.addEventListener('click', function(event){
 	resetCount();
+	btnStart.disabled = false;
 });
