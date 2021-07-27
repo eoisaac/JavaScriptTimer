@@ -64,4 +64,5 @@ btnPause.addEventListener('click', function(event){
 btnReset.addEventListener('click', function(event){
 	resetCount();
 	btnStart.disabled = false;
+	btnStart.innerHTML = 'Start'
 });
