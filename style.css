@@ -47,8 +47,7 @@ body{
 
 .display{
 	border-radius: 10px;
-	/* border-bottom: 2px solid var(--white-color); */
-	font-size: 90px;
+	font-size: 87px;
 	text-align: center;
 	color: var(--white-color);
 	margin-bottom: 10px;
@@ -58,7 +57,7 @@ body{
 	width: 85px;
 	height: 40px;
 	text-align: center;
-	font-size: 30px;
+	font-size: 27px;
 	margin: 6px;
 	border-radius: 10px;
 	border: var(--key-color);
@@ -88,6 +87,25 @@ body{
 .button:active{
 	background-color:rgba(255, 255, 255, 0.7);
 	transform: scale(1.02);	
+}
+
+.name-container{
+	margin-top: 10px;
+	text-align: center;
+
+}
+
+.myName{
+	font-size: 20px;
+	color: var(--background-color);
+	text-decoration: none;
+	padding: 0.5px 4px 3px 4px;
+}
+
+.myName:hover{
+	border: 1px solid var(--key-color);
+	color: var(--key-color);
+	border-radius: 10px;
 }
 
 :disabled{
