@@ -1,6 +1,6 @@
 # JavaScriptTimer
 
-Simple calculator made with JavaScript, HTML and CSS.
+Simple timer made with JavaScript, HTML and CSS.
 
 <p align = "center">
 	<img src ="assets/toReadme/gifTimer.gif">
