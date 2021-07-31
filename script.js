@@ -8,19 +8,19 @@ let minutes = 0;
 let hours = 0;
 let chronometer;
 
-function leftZero(num){
+function leftZero (num) {
 	return num <= 9 ? `0${num}` : num;
 }
 
 function startCount(){
-	chronometer = setInterval(function(){
+	chronometer = setInterval(function () {
 		timerDisplay.style.color = 'var(--white-color)';
 
-		if(seconds < 60){ seconds++;}
+		if (seconds < 60){ seconds++; }
 
-		if(seconds == 60){ seconds = 0; minutes++; }
+		if (seconds == 60){ seconds = 0; minutes++; }
 
-		if(minutes == 60){ minutes = 0; hours++; }
+		if (minutes == 60){ minutes = 0; hours++; }
 
 		timerDisplay.innerHTML = `${leftZero(hours)}:${leftZero(minutes)}:${leftZero(seconds)}`;
 
