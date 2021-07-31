@@ -1,4 +1,4 @@
-# JavaScriptTimer
+# JavaScript Timer
 
 Simple timer made with JavaScript, HTML and CSS.
 
